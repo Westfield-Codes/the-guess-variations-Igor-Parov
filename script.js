@@ -1,29 +1,57 @@
-// Create a global variable called turns, set it equal to 0
-var counter = 0;
-/* Define a function called rollDice */
-function rollDice() { 
+/* Guess Game Program by [Ihor]
+ * Adds the ability to play again. 
+ */
+
+/* newGame is an outer loop giving the user an option 
+ * to play again, using a boolean variable called again.
+ */
+
+// define function newGame
+
+  // create a Boolean variable for again, set to true
+
+  // loop as long as again is true 
+
+    // run the guessGame function 
+
+    // ask to play again with again set to a confirm
+
+    // close the loop
+
+  // thank the player for playing
+
+  // close the function
+
+
   
+// create a function called guessGame 
 
-    // create a variable called roll, set it equal to random 1-6
-  //let roll = Math.floor(Math.random()*6)+1;
-let roll = Math.floor(Math.random()*6)+1;
-counter +=1
-  // add 1 to turns
+  // create guess and set equal to 0 
 
-  // if roll equals 6, display "6! You won in [turns] turns."
-if( roll == 6) {
-    alert("6! You won in " + counter + " turns!")
-    counter = 0; 
-   
-  }
-    // otherwise:
+  // create tries and set equal to 0 
 
-  // use a confirm and say: "You rolled a [roll]"
- else { 
-     confirm("You rolled a " + roll);
-  // then call rollDice again.
-    rollDice();
-  // close the else block
-}
-// close the function block
+  // create variable answer and generate a random integer 1-100
+
+  // display the integer for testing purposes only
+
+  // loop while guess is not equal to answer
+
+    // set guess equal to asking user to "Guess a number, 1-100"
+
+    // add one to tries
+
+    // if guess equals answer display "Correct in [tries] tries!" 
+
+    // or if guess is greater than answer display "Too high!" 
+
+    // or if guess is less than answer display "Too low!" 
+
+    // if it's none of those, say "Bad Input!"
+
+    // end the loop
+
+  // end the function
+
+ }
+// end the function
 }
